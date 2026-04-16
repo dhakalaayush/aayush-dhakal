@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Aayush - Portfolio</title>
+    <title>Aayush Dhakal</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="icon" href="logo.png" type="image/png">
@@ -9,7 +9,7 @@
 <body>
 
     <div class="navbar">
-        <h2>Aayush</h2>
+        <img src = "logo1.png" class = "logo">
         <div class="nav-links">
             <a href="#home">Home</a>
             <a href="#about">About</a>
@@ -19,45 +19,120 @@
     </div>
 
     <div id="home" class="hero">
-        <h1>Hello, I'm Aayush</h1>
+        <div class = "profile-border">
+            <img src="Aayush.jpg" alt="Aayush" class="profile-pic">
+        </div>
+        <h1>Hello, I'm <font>Aayush</font></h1>
         <h3>IT Security | Computer Networking</h3>
-        <a href="#projects" class="btn">View My Works</a>
+        <a href="#projects" class="btn-wrapper">
+            <span class = "btn">View My Works</span>
+        </a>
     </div>
 
     <div id="about" class="section">
-        <h2>About Me</h2>
-        <div class="about-container">
-            <img src="Aayush.jpg" alt="Aayush" class="profile-pic">
-            
-            <div class="about-text">
-                <p>Hi! I am a Computer Networking and IT Security from Kathmandu with strong interest in penetration testing.</p>
-                <p><b>Location:</b> Kathmandu, Nepal<br>
-                   <b>Email:</b> aayushdhakal543@gmail.com<br>
-                   <b>Education:</b> NEB 10+2 (Science Stream),
-                    Graduated 2024 with 3.81/4 GPA<br>Bachelor's in Computer Networking and IT Security (Expected 2027)</p>
+        <div class = "about-item">
+            <div class = "icon">
+                <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div class = "about-text">
+                <h3>Academics</h3>
+                <p>Bachelor's in Computer Networking and IT Security, expected to graduate in 2027.</p>
+                <p>High School (NEB +2), graduated in 2024 with GPA 3.81/4.</p>
+            </div>
+        </div>
+
+        <div class = "about-item">
+            <div class = "icon">
+                <i class="fa-solid fa-house"></i>
+            </div>
+            <div class = "about-text">
+                <h3>Lifestyle</h3>
+                <p>Based in Kathmandu, Nepal, with exposure to a diverse culture and environment.</p>
+            </div>
+        </div>
+
+        <div class = "about-item">
+            <div class = "icon">
+                <i class="fa-solid fa-laptop-code"></i>
+            </div>
+            <div class = "about-text">
+                <h3>Interests</h3>
+                <p>Building technology and helping people secure their digital ecosystem.</p>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div id="skills-section" class="section">
+    <h1>Skills</h1>
+        <div id="skills" class="section">
+            <div class="stat-card">
+                <h2>Networking</h2>
+                <div class = "skill-list">
+                    <p>Switching & Routing</p>
+                    <p>IPv4 Addressing</p>
+                    <p>Subnetting</p>
+                    <p>Device Configurations</p>
+                    <p>Protocols</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <h2>Security Operations</h2>
+                <div class = "skill-list">
+                    <p>Log Interpretation</p>
+                    <p>Alert Monitoring</p>
+                    <p>Threat Hunting</p>
+                    <p>Incident Response</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <h2>Risk Management</h2>
+                <div class = "skill-list">
+                    <p>Vulnerability Assessment</p>
+                    <p>Risk Analysis</p>
+                    <p>Contingency Planning</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                    <h2>Cloud and DevOps</h2>
+                <div class = "skill-list">
+                    <p>AWS Cloud Architecting</p>
+                    <p>AWS Cloud Building Infrastructures</p>
+                    <p>Github</p>
+                    <p>Docker</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <h2>Programming Languages</h2>
+                <div class = "skill-list">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>Python</p>
+                    <p>JavaScript</p>
+                    <p>Bash</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <h2>Tools</h2>
+                <div class = "skill-list">
+                    <p>Kali Linux</p>
+                    <p>VSCode</p>
+                    <p>Wazuh</p>
+                    <p>Wireshark</p>
+                    <p>BurpSuite</p>
+                </div>
             </div>
         </div>
     </div>
 
-    <div id="skills" class="section">
-        <div class="stat-card">
-            <h2>10+</h2>
-            <p>Projects and Courseworks</p>
-        </div>
-
-        <div class="stat-card">
-            <h2>10+</h2>
-            <p>Tools and Technologies explored</p>
-        </div>
-
-        <div class="stat-card">
-            <h2>100%</h2>
-            <p>Curiosity and Commitment</p>
-        </div>
-    </div>
-
     <div id="projects" class="section">
-        <h2>Featured Projects</h2>
+        <h1>Featured Projects</h1>
         <div class="project-grid">
 
             <div class="project-card">
@@ -67,19 +142,6 @@
                     <p>Wazuh</p>
                 </div>
                 <a href="https://github.com/dhakalaayush/SIEM-Lab-with-Wazuh" class="project-link">View Project on Github →</a>
-            </div>
-
-            <div class="project-card">
-                <h3>Internal Network Penetration Testing</h3>
-                <p>A Vulnerability Assessment and internal Network Penetration Testing using Kali Linux, identifying security weaknesses.</p>
-                <div class = "tech">
-                    <p>Kali Linux</p>
-                    <p>Nmap</p>
-                    <p>Metasploit</p>
-                    <p>Hydra</p>
-                    <p>John the Ripper</p>
-                </div>
-                <a href="https://github.com/dhakalaayush/Internal-Network-Pen-Testing" class="project-link">View Project on Github →</a>
             </div>
 
             <div class="project-card">
@@ -97,24 +159,24 @@
 
             <div class="project-card">
                 <h3>Cybersecurity Awareness Website</h3>
-                <p><a href="https://dhakalaayush.github.io/Kavach/index.html" class="project-link">Cyber Kavach</a>: A website for cybersecurity awareness including blogs, quizzes and phishing simulator.</p>
+                <p>An awareness website that provides essential cybersecurity knowledge to help people stay secure in the digital world.</p>
                 <div class = "tech">
                     <p>HTML</p>
                     <p>CSS</p>
                     <p>JavaScript</p>
                 </div>
-                <a href="https://github.com/dhakalaayush/Kavach" class="project-link">View Project on Github →</a>
+                <a href="https://dhakalaayush.github.io/Kavach/" class="project-link">View Website →</a>
             </div>
 
         </div>
     </div>
+
 
     <div id="contact" class="section contact-section">
         <p>Feel free to reach out!</p>
         
         <div class="contact-info">
             <p><i class="fa-solid fa-envelope"></i> aayushdhakal543@gmail.com</p>
-            <p><i class="fa-solid fa-phone"></i> +977 9767938334</p>
             <p><i class="fa-brands fa-linkedin"></i> linkedin.com/in/aayush-dh</p>
             <p><i class="fa-brands fa-github"></i> github.com/dhakalaayush</p>
         </div>
