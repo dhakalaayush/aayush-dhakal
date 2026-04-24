@@ -1,12 +1,12 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #191927;
     color: #ffffff;
+    background-color: #222831;
 }
 
 font{
-    color:#00d7d2;
+    color: #dfd0b8;
 }
 
 .logo{
@@ -14,7 +14,7 @@ font{
 }
 
 .navbar {
-    background-color: #191927;
+    background-color: #222831;
     position: fixed;
     padding: 15px 40px;
     top: 0;
@@ -37,7 +37,6 @@ font{
 }
 
 .hero {
-    background: url("background2.png");
     color: rgb(255, 255, 255);
     text-align: center;
     padding: 180px 20px 120px 20px;
@@ -57,12 +56,12 @@ font{
   display: inline-block;
   padding: 2px;
   border-radius: 6px;
-  background: linear-gradient(to right, #764cff, #00d7d2);
+  background: #5c7c89;
 }
 
 .btn {
   display: inline-block;
-  background: #191927;
+  background: #1f252f;
   color: white;
   padding: 14px 32px;
   font-size: 18px;
@@ -87,7 +86,7 @@ font{
 
 #about
 {
-    background-color: #212130;
+    background-color: #181823;
     color: white;
     display: flex;
     flex-direction: column;
@@ -99,14 +98,11 @@ font{
     display: flex;
     align-items: center;
     margin-right: 50px;
-    
+    color: #5c7c89;
 }
 
 .icon i {
     font-size:xx-large;
-    background: linear-gradient(to top, #764cff, #00d7d2);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 .about-item {
@@ -120,27 +116,27 @@ font{
 }
 
 .about-text h3{
-    color:#00d7d2;
+    color:#dfd0b8;
 }
 
 .profile-border {
-  width: 240px;
-  height: 240px;
-  padding: 6px;
-  border-radius: 50%;
-  background: linear-gradient(to right, #764cff, #00d7d2);
-  display: inline-block;
+    width: 240px;
+    height: 240px;
+    padding: 6px;
+    border-radius: 50%;
+    background: #5c7c89;
+    display: inline-block;
 }
 
 .profile-pic {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 55%;
 }
 
 .stat-card{
-    background: linear-gradient(to bottom right, #2e253b, #1d1d2a);
+    background-color: #191d24;
     color: rgb(255, 255, 255);
     padding: 0px 30px;
     margin: 0 5px;
@@ -158,7 +154,7 @@ font{
 
 .stat-card h2{
     font-size: 25px;
-    color:white;
+    color:#7aa2b4;
     margin: 0;
     margin-top: 15px;
 }
@@ -199,9 +195,7 @@ font{
 
 #projects h1, #skills-section h1{
     font-size: 50px;
-    background: linear-gradient(to top, #764cff, #00d7d2);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #dfd0b8;
 }
 
 .project-grid {
@@ -214,26 +208,24 @@ font{
 }
 
 .project-card {
-    background: #1b1b29;
+    background: #191d24;
     color: rgb(161, 161, 161);
     width: 40%;
     padding: 30px;
     line-height: 2;
     border-radius: 10px;
-    border-left: 5px solid #764cff;
+    border-left: 5px solid #7aa2b4;
     text-align: left;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
 .project-card h3 {
     margin-top: 0;
-    color: #00d7d2;
+    color: #7aa2b4;
 }
 
 .project-link {
-    background: linear-gradient(to top, #764cff, #00d7d2);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #5c7c89;
     text-decoration: none;
     font-weight: bold;
 }
@@ -256,6 +248,11 @@ font{
     color: white;
     padding: 5px 0px;
     margin-top: 70px;
+}
+
+.contact-section a {
+    color: white;
+    text-decoration: none;
 }
 
 .contact-info p {
