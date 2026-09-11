@@ -1,293 +1,254 @@
-body {
-    margin: 0;
-    font-family: 'Courier New', Courier, monospace;
-    color: #76f178;
-    background-color: #1b1b1d;
-}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aayush Dhakal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="logo.png" type="image/png">
+</head>
+<body>
 
-font{
-    color: #4fc5f4;
-}
+    <div class="navbar">
+        <img src = "logo1.png" class = "logo">
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
 
-.logo{
-    height: 55px;
-}
+    <div id="home" class="hero">
+        <div class = "profile-border">
+            <img src="Aayush.jpg" alt="Aayush" class="profile-pic">
+        </div>
+        <h1><font>Aayush Dhakal</font></h1>
+        <h3>IT Security | Computer Networking</h3>
+        <a href="#projects" class="btn-wrapper">
+            <span class = "btn">View My Works</span>
+        </a>
+    </div>
 
-.navbar {
-    background-color: #1b1b1d;
-    position: fixed;
-    padding: 15px 40px;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index:999;
-}
+    <div id="about" class="section">
+        <div class = "about-item">
+            <div class = "icon">
+                <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div class = "about-text">
+                <h3>Academics</h3>
+                <p>Bachelor's in Computer Networking and IT Security, 2027.</p>
+            </div>
+        </div>
 
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    margin-left: 25px;
-    font-size: 16px;
-}
+        <div class = "about-item">
+            <div class = "icon">
+                <i class="fa-solid fa-house"></i>
+            </div>
+            <div class = "about-text">
+                <h3>Lifestyle</h3>
+                <p>Based in Kathmandu, Nepal, with exposure to a diverse culture and environment.</p>
+            </div>
+        </div>
 
-.nav-links a:hover {
-    color: rgb(213, 213, 213);
-}
+        <div class = "about-item">
+            <div class = "icon">
+                <i class="fa-solid fa-laptop-code"></i>
+            </div>
+            <div class = "about-text">
+                <h3>Interests</h3>
+                <p>Building technology and helping people secure their digital ecosystem.</p>
+            </div>
+        </div>
+    </div>
 
-.hero {
-    color: rgb(255, 255, 255);
-    text-align: center;
-    padding: 180px 20px 120px 20px;
-}
+    <div id="skills-section" class="section">
+        <h1>Skills</h1>
+        <div id="skills" class="section">
+            <div class="stat-card">
+                <div class="stat-card-inner">
+                    <h2>Networking</h2>
+                    <div class="skill-list">
+                        <p>Switching & Routing</p>
+                        <p>IPv4 Addressing</p>
+                        <p>IP Subnetting</p>
+                        <p>Cisco Device Configurations</p>
+                    </div>
+                </div>
+            </div>
 
-.hero h1 {
-    font-size: 52px;
-    margin: 0;
-}
+            <div class="stat-card">
+                <div class="stat-card-inner">
+                    <h2>Offensive Security</h2>
+                    <div class="skill-list">
+                        <p>Web Application Security</p>
+                        <p>Network Security</p>
+                        <p>System Security</p>
+                        <p>Vulnerability Scanning</p>
+                    </div>
+                </div>
+            </div>
 
-.hero h3 {
-    color: #76f178;
-    font-size: 24px;
-    margin: 15px 0 30px 0;
-}
+            <div class="stat-card">
+                <div class="stat-card-inner">
+                    <h2>Security Operations</h2>
+                    <div class="skill-list">
+                        <p>Log Interpretation and Analysis</p>
+                        <p>Alert Monitoring and Triage</p>
+                        <p>Threat Hunting</p>
+                        <p>Incident Response</p>
+                    </div>
+                </div>
+            </div>
 
-.btn-wrapper {
-  display: inline-block;
-  padding: 2px;
-  border-radius: 6px;
-  background: #5c7c89;
-}
+            <div class="stat-card">
+                <div class="stat-card-inner">
+                    <h2>Cloud and DevOps</h2>
+                    <div class="skill-list">
+                        <p>AWS Cloud Architecting</p>
+                        <p>AWS Cloud Infrastructures</p>
+                        <p>Github</p>
+                        <p>Docker</p>
+                    </div>
+                </div>
+            </div>
 
-.btn {
-  display: inline-block;
-  background: #1f252f;
-  color: white;
-  padding: 14px 32px;
-  font-size: 18px;
-  text-decoration: none;
-  border-radius: 4px;
-}
+            <div class="stat-card">
+                <div class="stat-card-inner">
+                    <h2>Technologies</h2>
+                    <div class="skill-list">
+                        <p>HTML</p>
+                        <p>CSS</p>
+                        <p>Python</p>
+                        <p>JavaScript</p>
+                        <p>Bash</p>
+                    </div>
+                </div>
+            </div>
 
+            <div class="stat-card">
+                <div class="stat-card-inner">
+                    <h2>Engineering Practices</h2>
+                    <div class="skill-list">
+                        <p>Agile/Scrum</p>
+                        <p>Kanban</p>
+                        <p>Test-Driven Deployment</p>
+                        <p>CI/CD</p>
+                    </div>
+                </div>
+            </div>
 
-.btn:hover {
-    background: #1e1e2e;
-}
+            <div class="stat-card">
+                <div class="stat-card-inner">
+                    <h2>Risk Management</h2>
+                    <div class="skill-list">
+                        <p>Vulnerability Assessment</p>
+                        <p>Risk Analysis</p>
+                        <p>Contingency Planning</p>
+                    </div>
+                </div>
+            </div>
 
-.section {
-    padding: 80px 40px;
-    text-align: center;
-}
+            <div class="stat-card">
+                <div class="stat-card-inner">
+                    <h2>Tools</h2>
+                    <div class="skill-list">
+                        <p>Kali Linux</p>
+                        <p>VSCode</p>
+                        <p>Wazuh</p>
+                        <p>Splunk</p>
+                        <p>Wireshark</p>
+                        <p>BurpSuite</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="stat-card">
+                <div class="stat-card-inner">
+                    <h2>Administration</h2>
+                    <div class="skill-list">
+                        <p>Windows</p>
+                        <p>Directory Management</p>
+                        <p>Linux</p>
+                        <p>Client/Server Dynamics</p>
+                    </div>
+                </div>
+            </div>
 
-.section h2 {
-    font-size: 38px;
-    margin-bottom: 50px;
-}
+            <div class="stat-card">
+                <div class="stat-card-inner">
+                    <h2>Forensics</h2>
+                    <div class="skill-list">
+                        <p>Digital Investigation</p>
+                        <p>E-discovery</p>
+                        <p>Digital Evidence Management</p>
+                    </div>
+                </div>
+            </div>
 
-#about
-{
-    background-color: #181823;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    line-height: 1.3;
-}
-
-.icon {
-    display: flex;
-    align-items: center;
-    margin-right: 50px;
-    color: #5c7c89;
-}
-
-.icon i {
-    font-size:xx-large;
-}
-
-.about-item {
-    display: flex;
-    width: 50%;
-    align-items: center;
-}
-
-.about-text {
-    width: 100%;
-}
-
-.about-text h3{
-    color:#dfd0b8;
-}
-
-.profile-border {
-    width: 240px;
-    height: 240px;
-    padding: 3px;
-    border-radius: 50%;
-    background: #76f178;
-    display: inline-block;
-}
-
-.profile-pic {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 55%;
-}
-
-.stat-card{
-    background-color: #00ab03;
-    color: rgb(255, 255, 255);
-    padding: 0px;
-    margin: 0 10px;
-    border-radius: 10px;
-    width: 24%;
-    height: 250px;
-    font-family: 'Courier New', Courier, monospace;
-
-    --card-shape: polygon(
-    20px 0%, 
-    calc(100% - 150px) 0%, 
-    calc(100% - 130px) 25px, 
-    100% 25px, 
-    100% calc(100% - 20px), 
-    calc(100% - 20px) 100%, 
-    20px 100%, 
-    0% calc(100% - 20px), 
-    0% 20px
-    );
-    padding: 1px; 
-    clip-path: var(--card-shape);
-}
-
-.stat-card-inner {
-  background: #0c1f0d; 
-  height: 100%;
-  padding: 24px;
-  clip-path: var(--card-shape);
-  box-sizing: border-box;
-}
-
-.stat-heading {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.stat-card h2{
-    font-size: 25px;
-    color: #76f178;
-    margin: 0;
-    margin-top: 15px;
-}
-
-#skills-section {
-    margin-top: 150px;
-    padding: 0;
-}
-
-#skills{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    margin: 0;
-    justify-content: center;
-    padding: 0 10px;
-    padding: 30px 0;
-}
+            <div class="stat-card">
+                <div class="stat-card-inner">
+                    <h2>AI</h2>
+                    <div class="skill-list">
+                        <p>AI-Assisted SecOps</p>
+                        <p>AI Security</p>
+                        <p>AI Governance and Risk</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-.skill-list{
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 15px;
-}
+    <div id="projects" class="section">
+        <h1>Featured Projects</h1>
+        <div class="project-grid">
 
-.skill-list p {
-    padding: 10px;
-    background: #1c291c;
-    color: white;
-    border-radius: 10px;
-    margin: 10px 5px;
-}
+            <div class="project-card">
+                <h3>SIEM with Wazuh</h3>
+                <p>A small scale SOC monitoring a network by scanning for vulnerabilties, malware, misconfigurations and responding to them.</p>
+                <div class = "tech">
+                    <p>Wazuh</p>
+                </div>
+                <a href="https://github.com/dhakalaayush/SIEM-Lab-with-Wazuh" class="project-link">View Project on Github →</a>
+            </div>
 
-#projects {
-    margin-top: 150px;
-    padding: 0;
-}
+            <div class="project-card">
+                <h3>Intrusion Detection System</h3>
+                <p>An Intrusion Detection System in Linux machine that can identify potential intrusions in a Linux system.</p>
+                <div class = "tech">
+                    <p>Python</p>
+                    <p>Flask</p>
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>JavaScript</p>
+                </div>
+                <a href="https://github.com/dhakalaayush/Intrusion-Detection-System" class="project-link">View Project on Github →</a>
+            </div>
 
-#projects h1, #skills-section h1{
-    font-size: 50px;
-    color: #4fc5f4;
-}
+            <div class="project-card">
+                <h3>Cybersecurity Awareness Website</h3>
+                <p>An awareness website that provides essential cybersecurity knowledge to help people stay secure in the digital world.</p>
+                <div class = "tech">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>JavaScript</p>
+                </div>
+                <a href="https://dhakalaayush.github.io/Kavach/" class="project-link">View Website →</a>
+            </div>
 
-.project-grid {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    max-width: 1100px;
-    margin: 0 auto;
-}
+        </div>
+    </div>
 
-.project-card {
-    background: #1c291c;
-    color: rgb(161, 161, 161);
-    width: 40%;
-    padding: 30px;
-    line-height: 2;
-    border-radius: 10px;
-    border-left: 5px solid #7aa2b4;
-    text-align: left;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-}
+ 
+    <div id="contact" class="section contact-section">
+        <p>Feel free to reach out!</p>
+        
+        <div class="contact-info">
+            <p><i class="fa-solid fa-envelope"></i><a href = ""> aayushdhakal543@gmail.com</a></p>
+            <p><i class="fa-brands fa-linkedin"></i><a href = ""> linkedin.com/in/aayush-dh</a></p>
+            <p><i class="fa-brands fa-github"></i><a href = ""> github.com/dhakalaayush</a></p>
+        </div>
+    </div>
 
-.project-card h3 {
-    margin-top: 0;
-    color: #76f178;
-}
-
-.project-link {
-    color: #4fc5f4;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.tech{
-    display: flex;
-}
-
-.tech p{
-    background-color: #28283b;
-    color: rgb(161, 161, 161);
-    padding: 1px 10px;
-    margin-top: 0;
-    margin-right: 10px;
-    border-radius: 5px;
-}
-
-.contact-section {
-    border-top: 1px solid rgb(67, 67, 67);
-    color: white;
-    padding: 5px 0px;
-    margin-top: 70px;
-}
-
-.contact-section a {
-    color: white;
-    text-decoration: none;
-}
-
-.contact-info p {
-    font-size: 20px;
-    margin: 15px 0;
-}
-
-.large-btn {
-    margin-top: 30px;
-    padding: 18px 50px;
-    font-size: 20px;
-}
-
+</body>
+</html>
