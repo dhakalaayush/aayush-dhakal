@@ -14,8 +14,6 @@ font{
 }
 
 .navbar {
-    background-color: #1b1b1d;
-    position: fixed;
     padding: 15px 40px;
     top: 0;
     left: 0;
@@ -23,7 +21,6 @@ font{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index:999;
 }
 
 .nav-links a {
@@ -58,12 +55,12 @@ font{
   display: inline-block;
   padding: 2px;
   border-radius: 6px;
-  background: #5c7c89;
+  background: #35f638;
 }
 
 .btn {
   display: inline-block;
-  background: #1f252f;
+  background: #1b1b1d;
   color: white;
   padding: 14px 32px;
   font-size: 18px;
