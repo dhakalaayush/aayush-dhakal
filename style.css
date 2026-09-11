@@ -1,12 +1,12 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    color: #ffffff;
-    background-color: #222831;
+    font-family: 'Courier New', Courier, monospace;
+    color: #76f178;
+    background-color: #1b1b1d;
 }
 
 font{
-    color: #dfd0b8;
+    color: #4fc5f4;
 }
 
 .logo{
@@ -14,7 +14,7 @@ font{
 }
 
 .navbar {
-    background-color: #222831;
+    background-color: #1b1b1d;
     position: fixed;
     padding: 15px 40px;
     top: 0;
@@ -23,6 +23,7 @@ font{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index:999;
 }
 
 .nav-links a {
@@ -48,6 +49,7 @@ font{
 }
 
 .hero h3 {
+    color: #76f178;
     font-size: 24px;
     margin: 15px 0 30px 0;
 }
@@ -122,9 +124,9 @@ font{
 .profile-border {
     width: 240px;
     height: 240px;
-    padding: 6px;
+    padding: 3px;
     border-radius: 50%;
-    background: #5c7c89;
+    background: #76f178;
     display: inline-block;
 }
 
@@ -136,14 +138,36 @@ font{
 }
 
 .stat-card{
-    background-color: #191d24;
+    background-color: #00ab03;
     color: rgb(255, 255, 255);
-    padding: 0px 30px;
-    margin: 0 5px;
+    padding: 0px;
+    margin: 0 10px;
     border-radius: 10px;
     width: 24%;
     height: 250px;
-    border: 1px solid #2c2c3f;
+    font-family: 'Courier New', Courier, monospace;
+
+    --card-shape: polygon(
+    20px 0%, 
+    calc(100% - 150px) 0%, 
+    calc(100% - 130px) 25px, 
+    100% 25px, 
+    100% calc(100% - 20px), 
+    calc(100% - 20px) 100%, 
+    20px 100%, 
+    0% calc(100% - 20px), 
+    0% 20px
+    );
+    padding: 1px; 
+    clip-path: var(--card-shape);
+}
+
+.stat-card-inner {
+  background: #0c1f0d; 
+  height: 100%;
+  padding: 24px;
+  clip-path: var(--card-shape);
+  box-sizing: border-box;
 }
 
 .stat-heading {
@@ -154,7 +178,7 @@ font{
 
 .stat-card h2{
     font-size: 25px;
-    color:#7aa2b4;
+    color: #76f178;
     margin: 0;
     margin-top: 15px;
 }
@@ -167,11 +191,13 @@ font{
 #skills{
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 40px;
     margin: 0;
     justify-content: center;
     padding: 0 10px;
+    padding: 30px 0;
 }
+
 
 .skill-list{
     display: flex;
@@ -181,9 +207,8 @@ font{
 
 .skill-list p {
     padding: 10px;
-    background: #1e1e2c;
+    background: #1c291c;
     color: white;
-    border: 1px solid rgb(53, 53, 53);
     border-radius: 10px;
     margin: 10px 5px;
 }
@@ -195,7 +220,7 @@ font{
 
 #projects h1, #skills-section h1{
     font-size: 50px;
-    color: #dfd0b8;
+    color: #4fc5f4;
 }
 
 .project-grid {
@@ -208,7 +233,7 @@ font{
 }
 
 .project-card {
-    background: #191d24;
+    background: #1c291c;
     color: rgb(161, 161, 161);
     width: 40%;
     padding: 30px;
@@ -221,11 +246,11 @@ font{
 
 .project-card h3 {
     margin-top: 0;
-    color: #7aa2b4;
+    color: #76f178;
 }
 
 .project-link {
-    color: #5c7c89;
+    color: #4fc5f4;
     text-decoration: none;
     font-weight: bold;
 }
@@ -266,122 +291,3 @@ font{
     font-size: 20px;
 }
 
-/* Tablet */
-@media (max-width: 1024px) {
-    .about-item {
-        width: 75%;
-    }
-
-    .stat-card {
-        width: 45%;
-        margin: 5px;
-    }
-
-    .project-card {
-        width: 80%;
-    }
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        padding: 20px;
-    }
-    .nav-links {
-        margin-top: 15px;
-    }
-    .nav-links a {
-        margin: 0 12px;
-        font-size: 15px;
-    }
-    .hero {
-        padding: 140px 20px 80px 20px;
-    }
-    .hero h1 {
-        font-size: 38px;
-    }
-    .hero h3 {
-        font-size: 18px;
-    }
-
-    .about-item {
-        width: 90%;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .icon {
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
-
-    .stat-card {
-        width: 90%;
-        margin: 5px auto;
-        height: auto;
-        padding: 15px 20px;
-    }
-
-    /* Wrap stat cards in a column */
-    .stat-heading {
-        flex-wrap: wrap;
-    }
-
-    #skills-section,
-    #projects {
-        margin-top: 80px;
-    }
-
-    #projects h1,
-    #skills-section h1 {
-        font-size: 36px;
-    }
-
-    .project-card {
-        width: 90%;
-    }
-
-    .tech {
-        flex-wrap: wrap;
-    }
-
-    .contact-info p {
-        font-size: 16px;
-    }
-
-    .large-btn {
-        padding: 14px 30px;
-        font-size: 17px;
-    }
-}
-
-/* Small mobile */
-@media (max-width: 480px) {
-    .hero h1 {
-        font-size: 28px;
-    }
-
-    .hero h3 {
-        font-size: 15px;
-    }
-
-    .btn {
-        padding: 12px 22px;
-        font-size: 16px;
-    }
-
-    .section h2 {
-        font-size: 28px;
-    }
-
-    .nav-links a {
-        margin: 0 8px;
-        font-size: 14px;
-    }
-
-    .profile-border {
-        width: 180px;
-        height: 180px;
-    }
-}
